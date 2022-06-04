@@ -32,6 +32,7 @@ struct ContentView: View {
                     Text(checkAmount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
                 }
             }
+            .navigationTitle("weSplit")
         }
     }
 }
