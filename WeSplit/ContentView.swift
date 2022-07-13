@@ -65,7 +65,9 @@ struct ContentView: View {
 				}
 				
 				Section {
+					let textColor = tipPercentage > 0 ? Color.primary : Color.red
 					Text(totalPerPerson, format: localCurrency)
+						.foregroundColor(textColor)
 				} header: {
 					Text("Amount per person")
 				}
